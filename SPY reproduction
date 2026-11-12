@@ -1,1 +1,7 @@
+ticker = 'SPY'
+from_date = '2022-05-09'
+until_date = '2024-04-22'
 
+spy_intra_data = fetch_polygon_data(ticker, from_date, until_date, 'minute')
+spy_daily_data = fetch_polygon_data(ticker, from_date, until_date, 'day')
+dividends      = fetch_polygon_dividends(ticker)
